@@ -3,14 +3,15 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBQKqFH10dvfzUC51Bb2ab65PGmUP0m1oc",
-  authDomain: "medical-forms-be326.firebaseapp.com",
-  projectId: "medical-forms-be326",
-  storageBucket: "medical-forms-be326.appspot.com",
-  messagingSenderId: "365636741692",
-  appId: "1:365636741692:web:04452e322b7d57ae003139",
-  measurementId: "G-PJPXNHM5MZ" 
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain:import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID, 
+  appId: import.meta.env.VITE_FIREBASE_VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 
