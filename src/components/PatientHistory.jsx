@@ -34,7 +34,7 @@ const PatientHistory = () =>{
       <h2>Patient's Medical History</h2>
       {history.length >0 ? (
         history.map((event,index)=>(
-          <div className="event">
+          <div className="event" key={index}>
             <h3>{event.date}</h3>
             <p>{event.description}</p>
             </div>
